@@ -1,3 +1,3 @@
 .vscode/
-ui_*
+ui_*/
 __pycache__
