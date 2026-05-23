@@ -83,7 +83,7 @@ class App:
     def __init__(self, root):
         self.root = root
         self.root.title("T6T Parameters Processor")
-        self.root.geometry("1000x650")
+        self.root.geometry("1000x640")
         self.root.iconbitmap("icondraft1.ico") ## icon on the taskbar
 
         self.config = load_config()
@@ -180,7 +180,7 @@ class App:
                 text=text,
                 value=val,
                 variable=self.mode,
-                command=self.update_mode_ui
+                command=self.update_mode_ui,
             ).pack(anchor="w")
 
         # Params
@@ -307,7 +307,7 @@ class App:
                 params=params,
                 extra_params=extra_params,
                 all_flag=all_flag,
-                name_save_file=name
+                save_file_name=name
             )
 
             self.output_file = file_path
